@@ -257,6 +257,7 @@ li {
 }
 .projects-ideas .home .overlay .caption span {
   color: var(--blue);
+  transition: 0.3s ease-in-out;
 }
 .projects-ideas .home .overlay .action {
   display: flex;
@@ -726,6 +727,8 @@ li {
 .projects-ideas .contact .contact-main .contact-left .contact__item-info .contact__item-info-name {
   font-size: 1.1rem;
   color: var(--blue);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 .projects-ideas .contact .contact-main .contact-left .contact__item-info .contact__item-info-icon {
   position: absolute;
@@ -736,6 +739,7 @@ li {
 }
 .projects-ideas .contact .contact-main .contact-left .contact__item-info .contact__item-info-values p {
   font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 .projects-ideas .contact .contact-main .contact-left .contact__item-info:last-child {
   border: unset;

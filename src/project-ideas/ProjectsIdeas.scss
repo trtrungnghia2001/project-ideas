@@ -249,6 +249,7 @@ li{
                 font-weight: 500;
                 span{
                     color: var(--blue);
+                    transition: .3s ease-in-out ;
                 }
             }
             .action{
@@ -762,6 +763,8 @@ li{
                     .contact__item-info-name{
                         font-size: 1.1rem;
                         color: var(--blue);
+                        text-transform: capitalize;
+                        margin-bottom: 1rem;
                     }
                     .contact__item-info-icon{
                         position: absolute;
@@ -773,6 +776,7 @@ li{
                     .contact__item-info-values{
                         p{
                             font-size: .9rem;
+                            margin-bottom: .5rem;
                         }
                     }
                 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 import {FaFacebookF} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
@@ -32,15 +32,13 @@ const home = [
 export default function Home() {
   const [caption, setCaption] = useState('')
 
-  useEffect(()=>{
-    
+  const runText = useCallback(()=>{
     let text = ['Designer.','Freelancer.', 'Photographer.']
     let index = 0
     let i = 0
     let check = true;
     let speed = 200
     setInterval(()=>{
-      
       if(check){
         i++
         if(i>=text[index].length) {
@@ -53,12 +51,18 @@ export default function Home() {
           check = true;
           speed = 100;
           index++;
+          i=0;
         }
       }
       if(index>=text.length) index = 0
 
       setCaption(text[index].substring(0,i))
+      console.log(i)
     },speed)
+  },[])
+
+  useEffect(()=>{
+    runText()
   },[])
 
   return (
