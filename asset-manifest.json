@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/project-ideas/static/css/main.0eec8b47.css",
-    "main.js": "/project-ideas/static/js/main.b3da7ff3.js",
+    "main.css": "/project-ideas/static/css/main.992c44c2.css",
+    "main.js": "/project-ideas/static/js/main.9bcc609c.js",
     "static/js/787.76caddce.chunk.js": "/project-ideas/static/js/787.76caddce.chunk.js",
     "static/media/ebook-site.png": "/project-ideas/static/media/ebook-site.2726e1d7d5e0b1bad468.png",
     "static/media/2.jpg": "/project-ideas/static/media/2.b97c320f206d8491ec06.jpg",
     "static/media/1.jpg": "/project-ideas/static/media/1.c74c2cb1cfc2a913a165.jpg",
     "static/media/home.jpg": "/project-ideas/static/media/home.8937fc24174ff89d3427.jpg",
+    "static/media/portfolio.png": "/project-ideas/static/media/portfolio.d8906b76c44726e2aec8.png",
     "static/media/3.jpg": "/project-ideas/static/media/3.ce5dda74902e0960cdf6.jpg",
     "static/media/item-5.jpg": "/project-ideas/static/media/item-5.8ef8ec7ba342481d8d6c.jpg",
     "static/media/item-1.jpg": "/project-ideas/static/media/item-1.6c581862c95ad5580038.jpg",
@@ -19,12 +20,12 @@
     "static/media/item-3.jpg": "/project-ideas/static/media/item-3.301f050b62dfbe3f60d0.jpg",
     "static/media/logo.svg": "/project-ideas/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/project-ideas/index.html",
-    "main.0eec8b47.css.map": "/project-ideas/static/css/main.0eec8b47.css.map",
-    "main.b3da7ff3.js.map": "/project-ideas/static/js/main.b3da7ff3.js.map",
+    "main.992c44c2.css.map": "/project-ideas/static/css/main.992c44c2.css.map",
+    "main.9bcc609c.js.map": "/project-ideas/static/js/main.9bcc609c.js.map",
     "787.76caddce.chunk.js.map": "/project-ideas/static/js/787.76caddce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0eec8b47.css",
-    "static/js/main.b3da7ff3.js"
+    "static/css/main.992c44c2.css",
+    "static/js/main.9bcc609c.js"
   ]
 }
