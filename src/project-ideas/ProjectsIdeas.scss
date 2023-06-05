@@ -648,9 +648,24 @@ li{
         .blog-main{
             gap: 2rem;
             .itemBlog{
+                &:hover{
+                    .itemBlog__img{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                    .itemBlog__content{
+                        .itemBlog__title{
+                            color: var(--blue);
+                        }
+                    }
+                }
                 .itemBlog__img{
-
+                    overflow: hidden;
                     position: relative;
+                    img{
+                        transition: .5s ease-in-out;
+                    }
                     .itemBlog__category{
                         position: absolute;
                         bottom: 2rem;
@@ -671,6 +686,7 @@ li{
                     .itemBlog__title{
                         font-size: 1.1rem;
                         font-weight: 500;
+                        transition: .5s ease-in-out;
                     }
                     .itemBlog__info{
                         display: flex;
@@ -688,7 +704,10 @@ li{
                         color: var(--paragraphColor);
                     }
                     .itemBlog__action{
-
+                        text-transform: capitalize;
+                        a{
+                            color: white;
+                        }
                     }
                 }
                 

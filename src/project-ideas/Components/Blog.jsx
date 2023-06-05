@@ -61,7 +61,7 @@ export default function Blog() {
                       <p><span><AiOutlineComment/>{item.comment}</span> Comment</p>
                     </div>
                     <div className="itemBlog__post">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae repudiandae dolorum. Enim maxime similique et rerum quibusdam voluptatem, culpa eos provident perspiciatis consequuntur veniam debitis magni eligendi aut nobis?</p>
+                      <p>{item.content}</p>
                     </div>
                     <div className="itemBlog__action">
                       <a href="">read more</a>
