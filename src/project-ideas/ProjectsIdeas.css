@@ -221,6 +221,9 @@ li {
 .projects-ideas .slidebar .slidebar-body .slidebar-main .slidebar-listLink .slidebar-item a:hover {
   background-color: var(--dark2);
 }
+.projects-ideas .slidebar .slidebar-body .slidebar-main .slidebar-listLink .slidebar-item-action a {
+  color: var(--blue);
+}
 .projects-ideas .slidebar .slidebar-body .slidebar-main::-webkit-scrollbar {
   width: 0;
 }
@@ -250,6 +253,7 @@ li {
   font-size: 1.5rem;
   color: var(--paragraphColor);
   margin: 2rem 0;
+  font-weight: 500;
 }
 .projects-ideas .home .overlay .caption span {
   color: var(--blue);
@@ -355,6 +359,7 @@ li {
   border-radius: 0.5rem;
   border-bottom: 2px solid var(--blue);
   transition: 0.3s ease-in-out;
+  text-align: center;
 }
 .projects-ideas .services .services-main .card:hover {
   transform: translateY(-0.5rem);
@@ -437,6 +442,7 @@ li {
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid var(--blue);
+  background-color: var(--dark1);
   top: 8px;
   transition: 0.3s ease-in-out;
   animation: pulse 0.5s ease-in-out infinite;
@@ -526,6 +532,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: unset;
+  cursor: pointer;
+  border: unset;
+  transition: 0.3s ease-in-out;
+}
+.projects-ideas .portfolio .portfolio-main .portfolio-filter .filter-item .filter-item__overlay .filter-item__overlay-content .filter-item__action button:hover, .projects-ideas .portfolio .portfolio-main .portfolio-filter .filter-item .filter-item__overlay .filter-item__overlay-content .filter-item__action a:hover {
+  opacity: 0.75;
 }
 .projects-ideas .portfolio .portfolio-main .portfolio-filter .filter-item:hover .filter-item__img img {
   transform: scale(1.2);
@@ -598,6 +611,12 @@ li {
   border-radius: 0.25rem;
   height: 200px;
 }
+.projects-ideas .project .project-main .project-item .project-item__img img {
+  transition: 0.5s ease-in-out;
+}
+.projects-ideas .project .project-main .project-item .project-item__img:hover img {
+  transform: scale(1.2);
+}
 .projects-ideas .project .project-main .project-item .project-item__title {
   font-size: 1.1rem;
   color: white;
@@ -623,6 +642,7 @@ li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  border-radius: 0.25rem;
 }
 .projects-ideas .blog .blog-main {
   gap: 2rem;
@@ -680,6 +700,10 @@ li {
 }
 .projects-ideas .blog .blog-main .itemBlog .itemBlog__content .itemBlog__action a {
   color: white;
+  transition: 0.5s ease-in-out;
+}
+.projects-ideas .blog .blog-main .itemBlog .itemBlog__content .itemBlog__action a:hover {
+  color: var(--blue);
 }
 .projects-ideas .contact .contact-main {
   display: flex;
@@ -790,5 +814,12 @@ li {
   }
   .contact .contact-main {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 300px) {
+  .projects-ideas .home .overlay .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=ProjectsIdeas.css.map */

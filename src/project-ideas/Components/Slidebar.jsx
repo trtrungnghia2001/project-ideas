@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useAppContext} from '../context'
 
 import {FaHome} from 'react-icons/fa'
@@ -15,47 +15,64 @@ const slidebar=[
         icon: <FaHome/>,
         name:'home',
         path:'home',
+        action: true,
     },
     {
         icon: <FaUserAlt/>,
         name:'about',
         path:'about',
+        action: false,
     },
     {
         icon: <FaTasks/>,
         name:'services',
         path:'services',
+        action: false,
     },
     {
         icon: <FaGraduationCap/>,
         name:'resume',
         path:'resume',
+        action: false,
     },
     {
         icon: <FaBriefcase/>,
         name:'portfolio',
         path:'portfolio',
+        action: false,
     },
     {
       icon: <CgWebsite/>,
       name:'project',
       path:'project',
+      action: false,
     },
     {
         icon: <FaNewspaper/>,
         name:'blog',
         path:'blog',
+        action: false,
     },
     {
         icon: <FaMapMarkerAlt/>,
         name:'contact',
         path:'contact',
+        action: false,
     },
 ]
 
 export default function Slidebar() {
 
   const {toggle, setToggle} = useAppContext()
+  const [actionLink, setActionLink] = useState(slidebar)
+
+  const handbleClick = (value)=>{
+    const newList = actionLink.map(item=>{
+      item.name===value? item.action=true : item.action=false
+      return item
+    })
+    setActionLink(newList)
+  }
 
   return (
     <div className={toggle? "slidebar hide" : "slidebar"} onClick={()=>setToggle(true)}>
@@ -72,7 +89,11 @@ export default function Slidebar() {
             {
               slidebar.map((item, index)=>{
                 return(
-                  <li key={index} className='slidebar-item'>
+                  <li key={index} 
+                  className={item.action? 'slidebar-item slidebar-item-action' : 'slidebar-item'}
+                  onClick={()=>handbleClick(item.name)}
+                  
+                  >
                     <a href={`#${item.path}`} onClick={()=>setToggle(true)}>
                       {item.icon}
                       {item.name}
