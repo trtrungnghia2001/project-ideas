@@ -57,7 +57,6 @@ export default function Home() {
       if(index>=text.length) index = 0
 
       setCaption(text[index].substring(0,i))
-      console.log(i)
     },speed)
   },[])
 
